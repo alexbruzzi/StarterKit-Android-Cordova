@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Octo Services</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Octo Services</h1>
+            <br />
+            <button type="button" id="app_init" width="100%">App Init</button>
+            <br /><br />
+            <button type="button" id="app_login" width="100%">App Login</button>
+            <br /><br />
+            <button type="button" id="app_logout" width="100%">App Logout</button>
+            <br /><br />
+            <button type="button" id="page_view" width="100%">Page View</button>
+            <br /><br />
+            <button type="button" id="product_pageview" width="100%">Product Page View</button>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+<!--
+Customize this policy to fit your own app's needs. For more guidance, see:
+    https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+Some notes:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+-->
